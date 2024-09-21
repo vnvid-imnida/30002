@@ -36,8 +36,8 @@ int main(int argc, char* argv[])
         "4) SHOW_FREQUENCIES - вывести таблицу частот (весов) символов;\n"
         "5) SHOW_SIZE - вывести размер сообщения в битах, если бы использовали алгоритм "
         "кодирования с одинаковой длиной всех кодовых слов;\n"
-        "6) SHOW_ENCODED_SIZE - вывести размер сообщения, закодированного по алгоритму Хаффмана, "
-        "в битах\n\n";
+        "6) SHOW_ENCODED_SIZE - вывести размер сообщения, закодированного по алгоритму "
+        "Хаффмана, в битах\n\n";
 
     cmd::HuffmanTree huffmanTree;
 
@@ -53,7 +53,7 @@ int main(int argc, char* argv[])
         {
             std::cerr << "Command not found\n";
             std::cin.clear();
-            std::cin.ignore(std::numeric_limits< std::streamsize >::max(), '\n'); 
+            std::cin.ignore(std::numeric_limits< std::streamsize >::max(), '\n');
         }
         catch (const std::invalid_argument& error)
         {

@@ -11,7 +11,7 @@
 
 namespace cmd
 {
-    void code(const std::string& fileName, HuffmanTree& huffmanTree, std::istream& in, 
+    void code(const std::string& fileName, HuffmanTree& huffmanTree, std::istream& in,
         std::ostream& out)
     {
         formatsIO::StreamGuard guard(in);
@@ -136,7 +136,7 @@ namespace cmd
         );
     }
 
-    void showSize(const std::string& fileName, const HuffmanTree& huffmanTree, std::istream& in, 
+    void showSize(const std::string& fileName, const HuffmanTree& huffmanTree, std::istream& in,
         std::ostream& out)
     {
         formatsIO::StreamGuard guard(in);
@@ -252,7 +252,7 @@ namespace cmd
         {
             huffmanTree.codes[root->symbol] = code;
         }
-        
+
         generateHuffmanCodes(huffmanTree, root->left, code + "0");
         generateHuffmanCodes(huffmanTree, root->right, code + "1");
     }
